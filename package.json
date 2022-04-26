@@ -1,0 +1,17 @@
+{
+  "name": "selenium-testing",
+  "version": "1.0.0",
+  "description": "selenium",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "fs": "^0.0.1-security",
+    "mocha": "^9.2.2",
+    "selenium-webdriver": "^4.1.1"
+  }
+}

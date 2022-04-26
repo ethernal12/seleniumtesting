@@ -1,0 +1,36 @@
+
+
+<html>
+
+<head>
+    <title></title>
+    <script  src="https://smtpjs.com/v3/smtp.js"></script>
+    <script type="text/javascript">
+        function sendEmail() {
+            Email.send({
+                Host: "smtp.gmail.com",
+                Username: "",
+                Password: "",
+                To: '',
+                From: "",
+                Subject: "cnn_variables",
+                Body: "sent email",
+                Attachments: [
+          {
+            name: "cnn_titles",
+            path: "C:/selenium testing/data.txt"
+          }]
+            }).then(
+                message => alert("mail sent successfully")
+            );
+        }
+    </script>
+</head>
+
+<body>
+    <form method="post">
+        <input type="button" value="Send Email" onclick="sendEmail()" />
+    </form>
+</body>
+
+</html>
