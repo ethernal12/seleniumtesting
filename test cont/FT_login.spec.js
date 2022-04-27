@@ -4,7 +4,7 @@ const assert = require('assert')
 require('dotenv').config()
 
 
-for (let i = 0; i < 5; i++) {
+for (let i = 0; i < 1; i++) {
   describe('login', function () {
     this.timeout(30000)
     let driver
