@@ -271,7 +271,17 @@ for (let i = 0; i < 1; i++) {
       vars["health"] = "/----------------------------------------------";
     })
 
-    it("Shranjevanje spremenljivk.", () => {
+    it('Test shranjenih spremenljivk.', async function () {
+     
+      for(let key in vars){
+        
+        assert(vars[key].length > 5, key);
+  
+      }
+  
+    })
+
+    it("Pisanje spremenljivk v datoteko.", () => {
 
       for (let Var in vars) {
         //write to .txt file
