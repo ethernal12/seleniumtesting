@@ -16,7 +16,7 @@ for (let i = 0; i < 1; i++) {
 
     })
     afterEach(async function () {
-      //await driver.quit();
+      await driver.quit();
     })
     it('login', async function () {
       vars["username"] = process.env.cnnuser
